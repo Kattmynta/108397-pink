@@ -4,9 +4,208 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="index-body">
+  
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo">
+          <img class="logo__image" src="#" width="75" height="24" alt="Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>        
+        </div>
+      </nav>
+    </header>
+    
+    <main class="page-main">
+    
+      <h1 class="visually-hidden">Pink</h1>
+      
+      <section class="promo">
+        <img class="promo__main-photo" src="#" alt="">
+        <a class="promo__button">Скачать приложение</a> <!-- TODO: куда ведет ссылка? -->
+        <ul class="promo__source-list">
+          <li>
+            <a class="promo__source-item promo__source-item--ios" href="#">Скачать для iOS</a>
+          </li>
+          <li>
+            <a class="promo__source-item promo__source-item--android" href="#">Скачать для Android</a>
+          </li>
+          <li>
+            <a class="promo__source-item promo__source-item--windows" href="#">Скачать для Windows</a>
+          </li>          
+        </ul>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="advantages__title">Устали от серости мегаполиса?</p>
+        <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Поднимает настроение</h3>
+            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li class="advantages__item">
+          <li>
+            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+            <p class="advantages__item-description">Сделайте сником и украстье его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="advantages__pic" src="#">        
+      </section>
+      
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <input id="reviews-btn-1" name="reviews-toggle" type="radio" checked>
+        <input id="reviews-btn-2" name="reviews-toggle" type="radio">
+        <input id="reviews-btn-3" name="reviews-toggle" type="radio">        
+        <ul class="review-slider">
+          <li class="review-slider__item">
+            <blockquote class="review">
+              <h3 class="review__author">Николай Петров</h3>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>
+          <li class="review-slider__item">
+            <blockquote class="review">
+              <h3 class="review__author">Николай Петров</h3>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>
+          <li class="review-slider__item">
+            <blockquote class="review">
+              <h3 class="review__author">Николай Петров</h3>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </li>          
+        </ul>
+        <div class="review-slider__controls slider-controls">
+          <label for="reviews-btn-1"></label>
+          <label for="reviews-btn-2"></label>
+          <label for="reviews-btn-3"></label>
+        </div>          
+      </section>
+      
+      <section class="price">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <input id="price-btn-1" name="price-toggle" type="radio">
+        <input id="price-btn-2" name="price-toggle" type="radio" checked="checked">
+        <input id="price-btn-3" name="price-toggle" type="radio">
+        <div class="price-slider">
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <th class="price-table__title price-table__title--hit">
+                  Стандарт<br>
+                  <span class="price-table__price">3,99 USD</span>
+                </th>
+                <th class="price-table__title price-table__title--hit">
+                  Стандарт<br>
+                  <span class="price-table__price">3,99 USD</span>
+                </th>
+                <th class="price-table__title price-table__title--hit">
+                  Стандарт<br>
+                  <span class="price-table__price">3,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Розовый фильтр</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Розовый фильтр</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Розовый фильтр</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Смайлики</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Смайлики</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Смайлики</span>
+                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
+                </td>
+              </tr>
+              <tr>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Комментарии</span>
+                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Комментарии</span>
+                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
+                </td>
+                <td class="price-table__cell">
+                  <span class="price-table__text">Комментарии</span>
+                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="price-slider__controls slider-controls">
+          <label for="price-btn-1"></label>
+          <label for="price-btn-2"></label>
+          <label for="price-btn-3"></label>
+        </div> 
+      </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <section class="contacts">      
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts-info">
+          <p class="contacts-info__text contacts-info__text--common">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts-info__wrapper">
+            <li class="contacts-info__item">
+              <h3 class="contacts-info__title">Звоните:</h3>
+              <p class="contacts-info__text">+7(812)555-66-66</p>
+            </li>  
+            <li class="contacts-info__item">
+              <h3 class="contacts-info__title">Пишите:</h3>
+              <p class="contacts-info__text">mail@htmlacademy.ru</p>
+            </li>  
+            <li class="contacts-info__item">
+              <h3 class="contacts-info__title">Приезжайте в гости:</h3>
+              <p class="contacts-info__text">ул. Большая Конюшенная, 19/8</p>
+            </li>  
+          </ul>
+        </div>
+        <div class="map">
+          <!-- TODO -->
+        </div>
+      </section>      
+
+    </main>
+
+    <footer> <!-- TODO -->
+    </footer>
 
   </body>
 </html>
