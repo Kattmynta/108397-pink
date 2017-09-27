@@ -7,8 +7,8 @@
   <body class="index-body">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="logo" href="index.html">
-          <img class="logo__image" src="#" width="75" height="24" alt="Pink">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="#" width="75" height="24" alt="Pink" />
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -42,69 +42,75 @@
 
         <fieldset class="user-name-fieldset">
           <h2 class="visually-hidden">Представьтесь, пожалуйста</h2>
-
-          <label class="user-name-fieldset__label" for="surname-id">Фамилия:</label>
-          <input class="contest-form__text-input" id="surname-id" name="surname" type="text" placeholder="Укажите фамилию *">
-
-          <label class="user-name-fieldset__label" for="first-name-id">Имя:</label>
-          <input class="contest-form__text-input" id="first-name-id" name="first-name" type="text" placeholder="Введите ваше имя *">
-
-          <label class="user-name-fieldset__label" for="middle-name-id">Отчество:</label>
-          <input class="contest-form__text-input" id="middle-name-id" name="middle-name" type="text" placeholder="Ну и отчество тоже">
+          <p>
+            <label class="user-name-fieldset__label" for="surname-id">Фамилия:</label>
+            <input class="contest-form__text-input" id="surname-id" name="surname" type="text" placeholder="Укажите фамилию *" />
+          </p>
+          <p>
+            <label class="user-name-fieldset__label" for="first-name-id">Имя:</label>
+            <input class="contest-form__text-input" id="first-name-id" name="first-name" type="text" placeholder="Введите ваше имя *" />
+          </p>
+          <p>
+            <label class="user-name-fieldset__label" for="middle-name-id">Отчество:</label>
+            <input class="contest-form__text-input" id="middle-name-id" name="middle-name" type="text" placeholder="Ну и отчество тоже" />
+          </p>
+          <p>
         </fieldset>
 
         <fieldset class="user-achievements-fieldset">
           <h2 class="user-achievements-fieldset__title">Ваши безбашенные достижения в путешествии</h2>
           <p>
-            <input class="contest-form__checkbox" id="achievements-1-id" name="achievements-1" type="checkbox" checked>
+            <input class="contest-form__checkbox" id="achievements-1-id" name="achievements-1" type="checkbox" checked />
             <label class="user-achievements-fieldset__label" for="achievements-1-id">Сделал селфи с акулой</label>
           </p>
           <p>
-            <input class="contest-form__checkbox" id="achievements-2-id" name="achievements-2" type="checkbox" checked>
+            <input class="contest-form__checkbox" id="achievements-2-id" name="achievements-2" type="checkbox" checked />
             <label class="user-achievements-fieldset__label" for="achievements-2-id">Обгорел на пляже</label>
           </p>
           <p>
-            <input class="contest-form__checkbox" id="achievements-3-id" name="achievements-3" type="checkbox">
+            <input class="contest-form__checkbox" id="achievements-3-id" name="achievements-3" type="checkbox" />
             <label class="user-achievements-fieldset__label" for="achievements-3-id">Видел Чака Норриса</label>
           </p>
           <p>
-            <input class="contest-form__checkbox" id="achievements-4-id" name="achievements-4" type="checkbox">
+            <input class="contest-form__checkbox" id="achievements-4-id" name="achievements-4" type="checkbox" />
             <label class="user-achievements-fieldset__label" for="achievements-4-id">Накупил сувениров</label>
           </p>
           <p>
-            <input class="contest-form__checkbox" id="achievements-5-id" name="achievements-5" type="checkbox" checked>
+            <input class="contest-form__checkbox" id="achievements-5-id" name="achievements-5" type="checkbox" checked />
             <label class="user-achievements-fieldset__label" for="achievements-5-id">Удержал башню</label>
           </p>
           <p>
-            <input class="contest-form__checkbox" id="achievements-6-id" name="achievements-6" type="checkbox">
+            <input class="contest-form__checkbox" id="achievements-6-id" name="achievements-6" type="checkbox" />
             <label class="user-achievements-fieldset__label" for="achievements-6-id">Разгромил отель</label>
           </p>
         </fieldset>
 
         <fieldset class="user-contacts-fieldset">
           <h2 class="visually-hidden">Ваши контактные данные</h2>
-
-          <label class="user-contacts-fieldset__label" for="phone-id">Номер телефона</label>
-          <input class="contest-form__radio" id="phone-id" name="phone" type="text" placeholder="Номер, пожалуйста">
-
-          <label class="user-contacts-fieldset__label" for="email-id">Адрес почты</label>
-          <input class="contest-form__radio" id="email-id" name="email" type="text" placeholder="Введите почту *">
+          <p>
+            <label class="user-contacts-fieldset__label" for="phone-id">Номер телефона</label>
+            <input class="contest-form__radio" id="phone-id" name="phone" type="tel" placeholder="Номер, пожалуйста" />
+          </p>
+          <p>
+            <label class="user-contacts-fieldset__label" for="email-id">Адрес почты</label>
+            <input class="contest-form__radio" id="email-id" name="email" type="email" placeholder="Введите почту *" />
+          </p>
         </fieldset>
 
         <fieldset class="user-app-fieldset">
           <h2 class="user-app-fieldset__title">С каким приложением путешествовали?</h2>
 
           <p>
-          <input class="contest-form__radio" id="user-app-ios-id" type="radio" name="user-app" value="ios" checked>
-          <label class="user-app-fieldset__label" for="user-app-ios-id">Pink для iOS</label>
+            <input class="contest-form__radio" id="user-app-ios-id" type="radio" name="user-app" value="ios" checked />
+            <label class="user-app-fieldset__label" for="user-app-ios-id">Pink для iOS</label>
           </p>
           <p>
-          <input class="contest-form__radio" id="user-app-android-id" type="radio" name="user-app" value="android">
-          <label class="user-app-fieldset__label" for="user-app-android-id">Pink для Android</label>
+            <input class="contest-form__radio" id="user-app-android-id" type="radio" name="user-app" value="android" />
+            <label class="user-app-fieldset__label" for="user-app-android-id">Pink для Android</label>
           </p>
           <p>
-          <input class="contest-form__radio" id="user-app-windows-id" type="radio" name="user-app" value="windows">
-          <label class="user-app-fieldset__label" for="user-app-windows-id">Pink для Windows Phone</label>
+            <input class="contest-form__radio" id="user-app-windows-id" type="radio" name="user-app" value="windows" />
+            <label class="user-app-fieldset__label" for="user-app-windows-id">Pink для Windows Phone</label>
           </p>
         </fieldset>
 
@@ -113,19 +119,19 @@
           <textarea rows="10" cols="45" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
-        <input class="contest-form__button" type="submit" value="Отправить форму">
+        <input class="contest-form__button" type="submit" value="Отправить форму" />
         <p class="contest-form__text"><span class="contest-form__text--star">*</span> - обязательные поля</p>
       </form>
 
       <section class="popup popup--fail hidden">
         <h2 class="popup__title">Что-то пошло не так!</h2>
-        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
         <a class="popup__button" href="#">ОК</a>
       </section>
 
       <section class="popup popup-success hidden">
         <h2 class="popup__title">Ваша заявка отправлена</h2>
-        <p class="popup__text">Спасибо за ваше участие ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и опопвестим вас.</p>
+        <p class="popup__text">Спасибо за ваше участие! Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
         <a class="popup__button" href="#">Закрыть окно</a>
       </section>
 
@@ -134,7 +140,7 @@
     <footer class="page-footer">
 
       <a class="page-footer__logo" href="index.html">
-        <img src="#" title="Pink" alt="">
+        <img src="#" title="Pink" alt="" />
       </a>
       <h2 class="visually-hidden">Мы в социальных сетях:</h2>
       <ul class="social">
