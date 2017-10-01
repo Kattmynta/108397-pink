@@ -15,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -36,7 +36,10 @@
       <h1 class="visually-hidden">Pink</h1>
 
       <section class="get-app">
-        <img class="get-app__main-photo" src="#" alt="" />
+        <div class="get-app__photo-container">
+          <!-- TODO заменить на picture -->
+          <img class="get-app__main-photo" src="img/iphone-hand-mobile@1x.png" alt="" />
+        </div>
         <a class="get-app__button" href="#">Скачать приложение</a> <!-- TODO: куда ведет ссылка? -->
         <ul class="get-app__source-list">
           <li>
@@ -110,118 +113,60 @@
         <input id="price-btn-2" name="price-toggle" type="radio" checked="checked" />
         <input id="price-btn-3" name="price-toggle" type="radio" />
         <div class="price-slider">
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <th class="price-table__title price-table__title--hit">
-                  Стандарт<br />
-                  <span class="price-table__price">3,99 USD</span>
-                </th>
-                <th class="price-table__title">
-                  <span class="visually-hidden">Наличие</span>
-                </th>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Розовый фильтр</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Смайлики</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Комментарии</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <th class="price-table__title price-table__title--hit">
-                  Стандарт<br />
-                  <span class="price-table__price">3,99 USD</span>
-                </th>
-                <th class="price-table__title">
-                  <span class="visually-hidden">Наличие</span>
-                </th>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Розовый фильтр</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Смайлики</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Комментарии</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="price-table">
-            <tbody>
-              <tr>
-                <th class="price-table__title price-table__title--hit">
-                  Стандарт<br />
-                  <span class="price-table__price">3,99 USD</span>
-                </th>
-                <th class="price-table__title">
-                  <span class="visually-hidden">Наличие</span>
-                </th>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Розовый фильтр</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Смайлики</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--yes">есть</div>
-                </td>
-              </tr>
-              <tr>
-                <td class="price-table__cell">
-                  <span class="price-table__text">Комментарии</span>
-                </td>
-                <td>
-                  <div class="price-table__check-icon price-table__check-icon--no">нет</div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+          <section class="price-item">
+            <h3 class="price-item__title price-item__title--hit">
+              Стандарт<br />
+              <span class="price-item__price">3,99 USD</span>
+            </h3>
+            <p class="price-item__feature">
+              <span class="price-item__text">Розовый фильтр</span>
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Смайлики</span>            
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Комментарии</span>
+              <span class="price-item__check-icon price-item__check-icon--no">- нет</span>
+            </p>
+          </section>
+          <section class="price-item">
+            <h3 class="price-item__title price-item__title--hit">
+              Стандарт<br />
+              <span class="price-item__price">3,99 USD</span>
+            </h3>
+            <p class="price-item__feature">
+              <span class="price-item__text">Розовый фильтр</span>
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Смайлики</span>            
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Комментарии</span>
+              <span class="price-item__check-icon price-item__check-icon--no">- нет</span>
+            </p>
+          </section>
+          <section class="price-item">
+            <h3 class="price-item__title price-item__title--hit">
+              Стандарт<br />
+              <span class="price-item__price">3,99 USD</span>
+            </h3>
+            <p class="price-item__feature">
+              <span class="price-item__text">Розовый фильтр</span>
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Смайлики</span>            
+              <span class="price-item__check-icon price-item__check-icon--yes">- есть</span>
+            </p>
+            <p class="price-item__feature">
+              <span class="price-item__text">Комментарии</span>
+              <span class="price-item__check-icon price-item__check-icon--no">- нет</span>
+            </p>
+          </section>
         </div>
         <div class="price-slider__controls slider-controls">
           <label for="price-btn-1"></label>
